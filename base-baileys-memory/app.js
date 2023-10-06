@@ -48,23 +48,45 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
     [flowSecundario]
 )
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
-    .addAnswer(
-        [
-            'te comparto los siguientes links de interes sobre el proyecto',
-            '👉 *doc* para ver la documentación',
-            '👉 *gracias*  para ver la lista de videos',
-            '👉 *discord* unirte al discord',
-        ],
-        null,
-        null,
-        [flowDocs, flowGracias, flowTuto, flowDiscord]
-    )
+const flowPrincipal = addKeyword(['hola', 'ole', 'alo']).addAnswer('Bienvenido, en que te puedo colaborar?',{ref:'img/toga.png'})
+    // .addAnswer('Porfavor digitemse su nombre',{capture:true},(ctx)=>{
+    //     console.log('Nombre: ', ctx.body)
+    // })
+    .addAnswer('correo',{capture:true},(ctx, {fallBack})=>{
+        if(!ctx.body.includes('@')){
+            return fallBack()
+        }
+        console.log('Celular: ',ctx.body)
+    })
+    // .addAnswer(
+    //     [
+    //         'te comparto los siguientes links de interes sobre el proyecto',
+    //         '👉 *doc* para ver la documentación',
+    //         '👉 *gracias*  para ver la lista de videos',
+    //         '👉 *discord* unirte al discord',
+    //     ],
+    //     null,
+    //     null,
+    //     [flowDocs, flowGracias, flowTuto, flowDiscord]
+    // )
+
+    const flowFinal = addKeyword(['Adios', 'chao', 'Chao', 'chao'])
+    .addAnswer('*Hasta luego que tengas una buena tarde*')
+    // .addAnswer(
+    //     [
+    //         'te comparto los siguientes links de interes sobre el proyecto',
+    //         '👉 *doc* para ver la documentación',
+    //         '👉 *gracias*  para ver la lista de videos',
+    //         '👉 *discord* unirte al discord',
+    //     ],
+    //     null,
+    //     null,
+    //     [flowDocs, flowGracias, flowTuto, flowDiscord]
+    // )
 
 const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal])
+    const adapterFlow = createFlow([flowPrincipal,flowFinal])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({

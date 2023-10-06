@@ -2,164 +2,10 @@
   key: {
     remoteJid: '573174254017@s.whatsapp.net',
     fromMe: false,
-    id: '1DBF2E15CB09846E53E09F1F568CE79A',
+    id: '3EB0926CF89B0AC5EA886E',
     participant: undefined
   },
-  messageTimestamp: 1696523337,
-  pushName: 'Jonathan Brito',
-  broadcast: false,
-  messageStubType: 2,
-  messageStubParameters: [ 'Message absent from node' ],
-  body: undefined,
-  from: '573174254017'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573174254017@s.whatsapp.net',
-    fromMe: false,
-    id: '1DBF2E15CB09846E53E09F1F568CE79A',
-    participant: undefined
-  },
-  messageTimestamp: 1696523338,
-  pushName: 'Jonathan Brito',
-  broadcast: false,
-  message: Message {
-    conversation: 'Hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola',
-  from: '573174254017'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_14f517ce-3d50-41aa-a615-dafb306931c4',
-  keyword: 'key_3940eb36-aa7b-4e37-80d3-ebc2a8d16780',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '5d50c4e9f4fec5548f2ad2cd09fbd42f'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_3581ca96-0e04-4f4f-af5f-0d3bf26c4a2f',
-  keyword: 'ans_14f517ce-3d50-41aa-a615-dafb306931c4',
-  answer: 'te comparto los siguientes links de interes sobre el proyecto\n' +
-    '👉 *doc* para ver la documentación\n' +
-    '👉 *gracias*  para ver la lista de videos\n' +
-    '👉 *discord* unirte al discord',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    nested: [
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object]
-    ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '084e8e35764517193ab72047715b9c5d'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573174254017@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0C6746A0DDA00C63EA6',
-    participant: undefined
-  },
-  messageTimestamp: 1696523371,
-  pushName: 'Jonathan Brito',
-  broadcast: false,
-  message: Message {
-    conversation: 'doc',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'doc',
-  from: '573174254017'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d10377fa-fb0a-42de-8c37-5f71501fcb67',
-  keyword: 'key_9f4bb9f4-1229-4ed8-93c1-f0e414458d22',
-  answer: '📄 Aquí encontras las documentación recuerda que puedes mejorarla\n' +
-    'https://bot-whatsapp.netlify.app/\n' +
-    '\n' +
-    '*2* Para siguiente paso.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    nested: [ [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'ba4a164b16413c751fe800c56841eeb5'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573174254017@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0EFF990B13A0CBDAD9D',
-    participant: undefined
-  },
-  messageTimestamp: 1696523381,
-  pushName: 'Jonathan Brito',
-  broadcast: false,
-  message: Message {
-    conversation: '2',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2',
-  from: '573174254017'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_e4358d92-9168-49c4-8b04-859d48046b0d',
-  keyword: 'key_b44ec6cf-ddda-44b1-ab3e-e3a0fd14f1ac',
-  answer: '📄 Aquí tenemos el flujo secundario',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '4e5f1ad3019c97f55e353c5b29b0e780'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573174254017@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0F8EE08599CEA019883',
-    participant: undefined
-  },
-  messageTimestamp: 1696523396,
+  messageTimestamp: 1696535668,
   pushName: 'Jonathan Brito',
   broadcast: false,
   message: Message {
@@ -173,9 +19,9 @@
   from: '573174254017'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_14f517ce-3d50-41aa-a615-dafb306931c4',
-  keyword: 'key_3940eb36-aa7b-4e37-80d3-ebc2a8d16780',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
+  ref: 'ans_27dfb601-db5a-4876-bdda-0a5bd3798ddd',
+  keyword: 'key_94894098-0444-4f39-862a-cb723e7a5b9c',
+  answer: 'Bienvenido, en que te puedo colaborar?',
   options: {
     media: null,
     buttons: [],
@@ -187,15 +33,69 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '5d50c4e9f4fec5548f2ad2cd09fbd42f'
+  refSerialize: '68a5b8b500faa3471d70432dc29a9ac1'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_3581ca96-0e04-4f4f-af5f-0d3bf26c4a2f',
-  keyword: 'ans_14f517ce-3d50-41aa-a615-dafb306931c4',
-  answer: 'te comparto los siguientes links de interes sobre el proyecto\n' +
-    '👉 *doc* para ver la documentación\n' +
-    '👉 *gracias*  para ver la lista de videos\n' +
-    '👉 *discord* unirte al discord',
+  ref: 'ans_11431e04-de75-40d9-8282-eae31c59ac40',
+  keyword: 'ans_27dfb601-db5a-4876-bdda-0a5bd3798ddd',
+  answer: 'correo',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '0922d5b9704fb0b715002bbb0f56c6b2'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573174254017@s.whatsapp.net',
+    fromMe: false,
+    id: '900D2719DA53BAD42788C2E919987AE8',
+    participant: undefined
+  },
+  messageTimestamp: 1696535710,
+  pushName: 'Jonathan Brito',
+  broadcast: false,
+  message: Message {
+    conversation: 'Jonathan @',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Jonathan @',
+  from: '573174254017'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573174254017@s.whatsapp.net',
+    fromMe: false,
+    id: 'A724704DD92A1B0249818A75ED2706B9',
+    participant: undefined
+  },
+  messageTimestamp: 1696535713,
+  pushName: 'Jonathan Brito',
+  broadcast: false,
+  message: Message {
+    conversation: 'Chao',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Chao',
+  from: '573174254017'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2d792acc-80e0-4481-8140-b0e89874e5fe',
+  keyword: 'key_5121519b-1b86-4ae2-ac11-a17abe3c15e2',
+  answer: '*Hasta luego que tengas una buena tarde*',
   options: {
     media: null,
     buttons: [],
@@ -203,76 +103,9 @@
     child: null,
     delay: 0,
     idle: null,
-    nested: [
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object]
-    ],
+    nested: [],
     keyword: {},
     callback: false
   },
-  refSerialize: '084e8e35764517193ab72047715b9c5d'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573174254017@s.whatsapp.net',
-    fromMe: false,
-    id: '6EAE5E4591A0970C65D50BCE6583F610',
-    participant: undefined
-  },
-  messageTimestamp: 1696523455,
-  pushName: 'Jonathan Brito',
-  broadcast: false,
-  message: Message {
-    conversation: 'gracias',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'gracias',
-  from: '573174254017'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_fabdf208-03a8-489c-b305-cb5a941a86fc',
-  keyword: 'key_09c9108d-c6eb-410d-bdd0-bea0cd7ecd55',
-  answer: '🚀 Puedes aportar tu granito de arena a este proyecto\n' +
-    '[*opencollective*] https://opencollective.com/bot-whatsapp\n' +
-    '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez\n' +
-    '[*patreon*] https://www.patreon.com/leifermendez\n' +
-    '\n' +
-    '*2* Para siguiente paso.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    nested: [ [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '88c16aa0c4afc04f80db648ab6c92b34'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573174254017@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0F30FF760B75FF18745',
-    participant: undefined
-  },
-  messageTimestamp: 1696523459,
-  pushName: 'Jonathan Brito',
-  broadcast: false,
-  message: Message {
-    conversation: 'gracias',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'gracias',
-  from: '573174254017'
+  refSerialize: '79e087d17ebdc6508f3ee8873402ef50'
 }
