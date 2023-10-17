@@ -4,12 +4,15 @@ const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
-const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
+const flowSecundario = addKeyword(['siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
-const flowDocs = addKeyword(['doc', 'documentacion', 'documentación']).addAnswer(
+const flowDocs = addKeyword(['1', 'Servicios', 'servicio']).addAnswer(
     [
-        '📄 Aquí encontras las documentación recuerda que puedes mejorarla',
-        'https://bot-whatsapp.netlify.app/',
+        '📄 Estos son los servicios que actualmente prestamos',
+        '1) Mantenimiento de equipos',
+        '2) Instalacion de equipos',
+        '3) Instalacion de software',
+        '4) Instalacion de camaras de seguridad',
         '\n*2* Para siguiente paso.',
     ],
     null,
@@ -48,27 +51,18 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
     [flowSecundario]
 )
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo']).addAnswer('Bienvenido, en que te puedo colaborar?',{ref:'img/toga.png'})
-    // .addAnswer('Porfavor digitemse su nombre',{capture:true},(ctx)=>{
-    //     console.log('Nombre: ', ctx.body)
-    // })
-    .addAnswer('correo',{capture:true},(ctx, {fallBack})=>{
-        if(!ctx.body.includes('@')){
-            return fallBack()
-        }
-        console.log('Celular: ',ctx.body)
-    })
-    // .addAnswer(
-    //     [
-    //         'te comparto los siguientes links de interes sobre el proyecto',
-    //         '👉 *doc* para ver la documentación',
-    //         '👉 *gracias*  para ver la lista de videos',
-    //         '👉 *discord* unirte al discord',
-    //     ],
-    //     null,
-    //     null,
-    //     [flowDocs, flowGracias, flowTuto, flowDiscord]
-    // )
+const flowPrincipal = addKeyword(['hola', 'Hola', 'alo']).addAnswer('Bienvenido, en que te puedo colaborar?')
+    .addAnswer(
+    [
+        'te comparto los siguientes links de interes sobre el proyecto',
+        '👉 *1* ó *Servicios* para ver los servicios que se brindan',
+        '👉 *2* ó *Calcular*  para hacer calculos sencillos',
+        '👉 *3* ó *Soport* Comunicarte con un tecnico',
+    ],
+    null,
+    null,
+    [flowDocs, flowGracias, flowTuto, flowDiscord]
+)
 
     const flowFinal = addKeyword(['Adios', 'chao', 'Chao', 'chao'])
     .addAnswer('*Hasta luego que tengas una buena tarde*')
