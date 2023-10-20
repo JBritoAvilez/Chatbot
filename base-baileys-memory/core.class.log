@@ -2,15 +2,15 @@
   key: {
     remoteJid: '573174254017@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0F6CBF66AE9C65A84AA',
+    id: '3EB0AD2C6FE8B1F193F2E7',
     participant: undefined
   },
-  messageTimestamp: 1697553651,
+  messageTimestamp: 1697826891,
   pushName: 'Jonathan Brito',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'hola',
+      text: 'Hola',
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
     },
@@ -19,12 +19,12 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: 'hola',
+  body: 'Hola',
   from: '573174254017'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_5eb329dd-6b2a-45aa-b69f-3b6dbe2a42b2',
-  keyword: 'key_848d0628-6b40-44ca-a74d-35d34ed588c6',
+  ref: 'ans_eba0e4a9-fc31-43bc-bcb5-9c06529f7ee1',
+  keyword: 'key_a59b06d5-1efe-4bc2-af1c-2589695a39e7',
   answer: 'Bienvenido, en que te puedo colaborar?',
   options: {
     media: null,
@@ -37,15 +37,15 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '56126ad5a9de2ae088380c7f5d786918'
+  refSerialize: '5b06c79cd64f86417b3f0ceb23a5ae86'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_352a995a-16c9-46e6-9e10-f4cdd45822ee',
-  keyword: 'ans_5eb329dd-6b2a-45aa-b69f-3b6dbe2a42b2',
+  ref: 'ans_47e63fec-d917-48a7-be45-8f6d54e9def8',
+  keyword: 'ans_eba0e4a9-fc31-43bc-bcb5-9c06529f7ee1',
   answer: 'te comparto los siguientes links de interes sobre el proyecto\n' +
-    '👉 *1* ó *Servicios* para ver los servicios que se brindan\n' +
-    '👉 *2* ó *Calcular*  para hacer calculos sencillos\n' +
-    '👉 *3* ó *Soport* Comunicarte con un tecnico',
+    '👉 *Servicios* para ver los servicios que se brindan\n' +
+    '👉 *Calcular*  para hacer calculos sencillos\n' +
+    '👉 *Soport* Comunicarte con un tecnico',
   options: {
     media: null,
     buttons: [],
@@ -62,21 +62,21 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b163248cb23526f6d0244459d53a3726'
+  refSerialize: 'b85ce4d0ae4e2b040e16d3847f3c6634'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573174254017@s.whatsapp.net',
     fromMe: false,
-    id: '3EB04532B41E6727CF292A',
+    id: '3EB069AFE0580D398B427A',
     participant: undefined
   },
-  messageTimestamp: 1697553675,
+  messageTimestamp: 1697826895,
   pushName: 'Jonathan Brito',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: '2',
+      text: 'servicio',
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
     },
@@ -85,19 +85,19 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: '2',
+  body: 'servicio',
   from: '573174254017'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_416db7f7-450e-4be1-9573-f369b1281424',
-  keyword: 'key_eb3aa655-753e-499c-8146-57ece3326a97',
+  ref: 'ans_a5f92514-f7ed-46cb-b725-b0ecd8df76d5',
+  keyword: 'key_8950a5a9-4bed-4e93-9255-837c22dc9734',
   answer: '📄 Estos son los servicios que actualmente prestamos\n' +
-    '1) Mantenimiento de equipos\n' +
-    '2) Instalacion de equipos\n' +
-    '3) Instalacion de software\n' +
-    '4) Instalacion de camaras de seguridad\n' +
+    '1) *Mantenimiento* de equipos\n' +
+    '2) *Instalacion* de equipos\n' +
+    '3) *Instalacion* de software\n' +
+    '4) *Instalacion* de camaras de seguridad\n' +
     '\n' +
-    '*2* Para siguiente paso.',
+    ' *siguiente* para ver mas opciones',
   options: {
     media: null,
     buttons: [],
@@ -105,9 +105,100 @@
     child: null,
     delay: 0,
     idle: null,
-    nested: [ [Object], [Object] ],
+    nested: [ [Object], [Object], [Object], [Object] ],
     keyword: {},
     callback: false
   },
-  refSerialize: 'bc1ea9552d368b46c39c6434bdbce206'
+  refSerialize: '4cbc9e8b93036f5fc27455bff8bce687'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573174254017@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0EE591D2156526BAD72',
+    participant: undefined
+  },
+  messageTimestamp: 1697826899,
+  pushName: 'Jonathan Brito',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'mantenimiento',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'mantenimiento',
+  from: '573174254017'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_f2d2d442-f12a-42cf-b31e-5fe37760642d',
+  keyword: 'key_3d887b2b-1377-4ce1-80c5-35b73bafe33b',
+  answer: '📄 Se brinda servicio de mantenimiento a los siguientes equipos: \n' +
+    'Portatil 💻\n' +
+    'Computador 🖥️\n' +
+    'Impresora 🖨️\n' +
+    'Celular 📱',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'e6e5eb855c8f3eb9412dbe10591eaea9'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573174254017@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB094EFDCAFB144657628',
+    participant: undefined
+  },
+  messageTimestamp: 1697826902,
+  pushName: 'Jonathan Brito',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'portatil',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'portatil',
+  from: '573174254017'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_70af99a6-73bc-438c-9d59-2a3ff61b0013',
+  keyword: 'key_0dcb99de-0e5a-4c68-89d9-3a3d5d8f2ca1',
+  answer: 'El mantenimiento de poratil tiene un valor de 15000',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '1eed5126e0df079726a3255214f011ee'
 }

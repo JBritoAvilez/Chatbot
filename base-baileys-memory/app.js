@@ -4,20 +4,40 @@ const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
-const flowSecundario = addKeyword(['siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
-const flowDocs = addKeyword(['1', 'Servicios', 'servicio']).addAnswer(
+const flowSecundario = addKeyword(['siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
+const flowPortatil = addKeyword('Portatil').addAnswer('El mantenimiento del *porati*l tiene un valor de 15000')
+const flowComputador = addKeyword('Portatil').addAnswer('El mantenimiento del *Computador* tiene un valor de 20000')
+const flowImpresora = addKeyword('Portatil').addAnswer('El mantenimiento del *Impresora* tiene un valor de 30000')
+const flowCelular = addKeyword('Portatil').addAnswer('El mantenimiento del *Celular* tiene un valor de 50000')
+
+
+const flowMantenimiento = addKeyword(['Mantenimiento','mantenimiento'])
+.addAnswer([
+    '📄 Se brinda servicio de mantenimiento a los siguientes equipos: ',
+    'Portatil 💻',
+    'Computador 🖥️',
+    'Impresora 🖨️',
+    'Celular 📱'],
+    null,
+    null,
+    [flowPortatil,flowComputador,flowImpresora,flowCelular]
+)
+
+
+
+const flowDocs = addKeyword(['Servicios', 'servicio']).addAnswer(
     [
         '📄 Estos son los servicios que actualmente prestamos',
-        '1) Mantenimiento de equipos',
-        '2) Instalacion de equipos',
-        '3) Instalacion de software',
-        '4) Instalacion de camaras de seguridad',
-        '\n*2* Para siguiente paso.',
+        '1) *Mantenimiento* de equipos',
+        '2) *Instalacion* de equipos',
+        '3) *Instalacion* de software',
+        '4) *Instalacion* de camaras de seguridad',
+        '\n *siguiente* para ver mas opciones',
     ],
     null,
     null,
-    [flowSecundario]
+    [flowSecundario,flowMantenimiento]
 )
 
 const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
@@ -51,13 +71,13 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
     [flowSecundario]
 )
 
-const flowPrincipal = addKeyword(['hola', 'Hola', 'alo']).addAnswer('Bienvenido, en que te puedo colaborar?')
+const flowPrincipal = addKeyword(['hola', 'Hola', 'alo', 'inicio']).addAnswer('Bienvenido, en que te puedo colaborar?')
     .addAnswer(
     [
         'te comparto los siguientes links de interes sobre el proyecto',
-        '👉 *1* ó *Servicios* para ver los servicios que se brindan',
-        '👉 *2* ó *Calcular*  para hacer calculos sencillos',
-        '👉 *3* ó *Soport* Comunicarte con un tecnico',
+        '👉 *Servicios* para ver los servicios que se brindan',
+        '👉 *Calcular*  para hacer calculos sencillos',
+        '👉 *Soport* Comunicarte con un tecnico',
     ],
     null,
     null,
