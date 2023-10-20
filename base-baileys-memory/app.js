@@ -24,7 +24,9 @@ const flowMantenimiento = addKeyword(['Mantenimiento','mantenimiento'])
     [flowPortatil,flowComputador,flowImpresora,flowCelular]
 )
 
-
+const flowInstalacion = addKeyword(['Instalacion','instalacion']).addAnswer('te envio esta imagen',{
+    media:'https://i.imgur.com/0'
+})
 
 const flowDocs = addKeyword(['Servicios', 'servicio']).addAnswer(
     [
@@ -37,7 +39,7 @@ const flowDocs = addKeyword(['Servicios', 'servicio']).addAnswer(
     ],
     null,
     null,
-    [flowSecundario,flowMantenimiento]
+    [flowSecundario,flowMantenimiento,flowInstalacion]
 )
 
 const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
