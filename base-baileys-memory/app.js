@@ -24,11 +24,19 @@ const flowMantenimiento = addKeyword(['Mantenimiento','mantenimiento'])
     [flowPortatil,flowComputador,flowImpresora,flowCelular]
 )
 
-const flowInstalacion = addKeyword(['Instalacion','instalacion']).addAnswer('te envio esta imagen',{
-    media:'https://i.imgur.com/0'
-})
+const flowInstalacion = addKeyword(['Instalacion','instalacion']).addAnswer(['Se hace instalaciones de: ','Juegos clasicos','Setup Gamer','Software'],
+'Se envian soportes de imagen',{
+    media:'https://i.imgur.com/W7HyVJx.png'
+}
+// ,
+// 'Juegos clasicos',{
+//     media:'https://i.imgur.com/2txCjNc.jpeg'
+// }
 
-const flowDocs = addKeyword(['Servicios', 'servicio']).addAnswer(
+
+)
+
+const flowServicios = addKeyword(['Servicios', 'servicio']).addAnswer(
     [
         '📄 Estos son los servicios que actualmente prestamos',
         '1) *Mantenimiento* de equipos',
@@ -66,8 +74,8 @@ const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
     [flowSecundario]
 )
 
-const flowDiscord = addKeyword(['discord']).addAnswer(
-    ['🤪 Únete al discord', 'https://link.codigoencasa.com/DISCORD', '\n*2* Para siguiente paso.'],
+const flowCalcular = addKeyword(['Cacular','calcular']).addAnswer(['Buenas cuales son los datos que deseas calcular'],
+
     null,
     null,
     [flowSecundario]
@@ -83,7 +91,7 @@ const flowPrincipal = addKeyword(['hola', 'Hola', 'alo', 'inicio']).addAnswer('B
     ],
     null,
     null,
-    [flowDocs, flowGracias, flowTuto, flowDiscord]
+    [flowServicios, flowGracias, flowTuto, flowCalcular]
 )
 
     const flowFinal = addKeyword(['Adios', 'chao', 'Chao', 'chao'])
